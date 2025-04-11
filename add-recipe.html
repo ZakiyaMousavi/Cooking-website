@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tasty Pot🥣</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><nav> <a href="index.html">🏠Home Page</a> </nav></li>
+            <li><nav> <a href="add-recipe.html">📝Add your own Recipe</a></nav></li>
+            <li><nav> <a href="recipe-list.html">🧾Recipe List</a></nav></li>
+            </ul>
+    </header>
+    <h1> Add your own recipe</h1>
+    <p> Now it is your turn to teach us something new, ready?</p>
+       <form action="" method="get"> 
+         <ul>
+          <li><label for="recipe"> <strong>Your recipe name:</strong> </label> </li> <br>
+          <input type="text" id="recipe" required> <br>
+         <li> <label for="cook"> <strong> What ingredients are need?</strong> </label> </li> <br>
+          <textarea name="" id="cook" cols="30" rows="10" required></textarea> <br>
+          <li> <label for="instruction"> <strong>Tell us step by step what to do?</strong></label></li> <br>
+          <textarea name="" id="instruction" cols="30" rows="10" required></textarea> <br>
+          <li><label for="image"> <strong>Upload your food's image for us:</strong></label> </li> <br>
+          <input type="file" id="image" required> <br> <br>
+          <li><label for="category"><strong>Choose your food category:</strong></label> </li> <br>
+          <select name="food" id="category" required>
+            <option value="appetizer">Appetizers</option>
+            <option value="main">Main course</option>
+            <option value="side">Side dishes</option>
+            <option value="soup">Soups and stews</option>
+            <option value="baked">Baked goods</option>
+            <option value="snack">Snacks</option>
+            <option value="dessert">Desserts</option>
+         </select>
+         </ul>
+         <button>Add your recipe</button>
+
+      </form>
+
+
+</body>
+</html>
