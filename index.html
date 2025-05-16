@@ -3,47 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> The Tasty Pot🥣</title>
+    <title>Barbara AFghan Proverbs</title>
+    <style>
+        body{
+            display:grid;
+            grid-template-columns: repeat( auto-fill);
+            place-items: center;
+            background-color: rgb(208, 242, 226);
+            gap: 1rem;
+        }
+
+        nav{
+            background-color: #a0beb1;
+            width: 93.75rem;
+            height: 3.125rem;
+            display:flex;
+            gap: 3.125rem;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: large;
+
+        }
+        a:hover{
+            color:white;
+            transform: scale(1.05);
+        }
+         h1{
+            text-align: center;
+            color:black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 4.375rem;
+         }
+         .explain{
+            height: 12.5rem;
+            width: 43.75rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1,25rem;
+            border-radius: 0.625rem;
+            box-shadow: 0 8px 16px black;
+            padding: 0.625rem;
+         }
+         h2{
+            width:max-content ;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         .featuredproverb {
+            display: grid;
+            grid-template-columns: repeat(auto-fill)minmax(350px 350px);
+            gap: 0.625rem;
+            font-family:Arial, Helvetica, sans-serif ;
+            font-size: 1.25rem;
+         }
+         .pro{
+            border: #a0beb1;
+            border-style: solid;
+            border-width: 0.625rem;
+            border-radius:0.625rem;
+            max-width: 100%;
+            height: auto;
+            display: block;
+         }
+
+         .first{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.625rem;
+            box-shadow: 0 0.8rem 1rem black;
+            transition: all 0.3s ease ;
+            padding: 0.625rem;
+         }
+
+         .first:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0.75rem 1.5rem black;
+            background-color: rgb(195, 224, 215);
+        }
+        footer{
+            background-color:#a0beb1;
+            width: 93.75rem;
+            height: 6.25rem;
+            display: grid;
+            grid-template-columns: 1.875rem 1.875rem 1.875rem 1.875rem 10rem;
+            gap: 0.625rem;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <h1> <strong>The Tasty Pot</strong></h1>
-    <p>A pot in which magic is happening😉</p>
     <header>
-       <ul>
-           <li><nav> <a href="index.html">🏠Home Page</a> </nav></li>
-           <li><nav> <a href="add-recipe.html">📝Add your own Recipe</a></nav></li>
-           <li><nav> <a href="recipe-list.html">🧾Recipe List</a></nav></li>
-       </ul>
+        <nav>
+            <a href="indext.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="wall.html">Interactive wall</a>
+        </nav>
+        <h1> Afghan Proverbs</h1>
     </header>
     <section>
-      <p> Hello and welcome all food lovers, visit <strong>The Tasty Pot</strong>, 
-        where cooking is fun and simple.</p>
-      <p> You are here not only to learn cooking, but also help others to be a better cook.
-         Grap your spoon and start exploring this flavor pot.</p>
-   </section>
-   <section>
-    <button>
-       <h2><strong>For Today?🤨</strong></h2>
-       <h3> The Persian Kotlet😃</h3>
-       <img src="kotlet-recipe-1024x576.webp" height="300" width="300" alt="Kotlet">
-       <p> Make this delicious Kotlet using only three always-available ingredients at every home.</p>
-        <p>You will justneed potatoes, flour...</p>
-        <table>
-            <tr>
-                <th><a href="recipe-details.html">Grab the full recipe</a></th>
-            </tr>
-        </table>
-    </button>
+        <div class="explain">
+            <P>Afghan Proverbs are deeply important in Afghan culture.They reflect 
+            the values, wisdom and experiences of the people. These proverbs are not just sayings, they are 
+            tools for commucinatio, teaching the values and even conflict resolution.</P>
+           <span> <input type="text" placeholder="search...">
+            <button>Search</button></span>
+        </div>
     </section>
     <section>
-        <h4> Featured Categories:</h4>
-        <button> <a href="recipe-details.html">Spicy Pot Picks</a></button> 
-        <button> <a href="recipe-details.html">Sweet Pot Treats</a></button> <br> <br>
-        <button> <a href="recipe-details.html">Global Pot Journey</a></button>
-        <button> <a href="recipe-details.html">Veggie Pot Delights</a></button>
+        <div class="feature">
+            <h2>Featured Proverbs:</h2> <br>
+            <div class="featuredproverb">
+                <span class="first">
+                    <img  class="pro" src="5894e840-14cd-11f0-929a-c9c985ffe9e0.webp" alt="">
+                    <ul>
+                     <li>قطره قطره جمع گردد، وانگهی دریا شود</li>
+                     <li> Drop by drop, a river is made.</li>
+                     <li>Meaning: Small efforts add up to big results.</li>
+                   </ul>
+                </span> 
+                <span class="first">
+                    <img class="pro" src="Adame-tanbal.jpg" alt="A lazy person" >
+                    <ul>
+                        <li> ادم تنبل، عقل چهل وزیر را دارد.</li>
+                        <li>A lazy person has the wisdom of forty ministers.</li>
+                        <li>Meaning: A lazy person could outsmart forty wise men- just to skip a chore!</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
     </section>
+    <footer>
+    <img src="download.png" alt="telegram" width="30px" height="30px">
+    <img src="download.jpg" alt="instagram" width="30px" height="30px" >
+    <img src="download (1).jpg" alt="" width="30px" height="30px">
+    <img src="download (1).png" alt="" width="30px" height="30px">
+    <p>Join us on social media.</p>
+    </footer>
     
-     
 </body>
-
 </html>
